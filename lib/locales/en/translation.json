@@ -1,0 +1,184 @@
+{
+  "navBarItems": {
+    "news": "News",
+    "contact": "Contact"
+  },
+  "cta": "Get started",
+  "back": "Back",
+  "home": {
+    "heading": "Maximize legal productivity with our AI powered platform",
+    "text": "Foytech provides tailored AI solutions for law firms and other actors in the legal industry."
+  },
+  "foytech": {
+    "heading": "The Foytech Mission",
+    "text": "Led by CEO Richard Sahlberg, Foytech has grown from an internal project at Foyen Law Firm to a cutting-edge AI platform used by other law firms. It was founded to empower legal experts and is continuously refined by professionals in the field, ensuring it meets the highest standards for generative AI in Swedish law."
+  },
+  "rumpole": {
+    "heading": "Introducing",
+    "text1": "Foytech's flagship product Rumpole offers a robust platform for lawyers to efficiently navigate and analyze legal information. The system is highly flexible, accommodating ready-made or custom data sets, various hosting options, and multiple AI engine choices.",
+    "text2": "Rumpole can be tailored to your firm's specific needs, including customized branding and domain names. For a closer look at our solutions, request access to the free version and get an introduction to the platform and its possibilities."
+  },
+  "team": {
+    "heading": "The team behind Foytech",
+    "text1": "Co-Founder Richard Sahlberg has worked at Foyen Law Firm since 2010, specializing in construction law and litigation. Prior to that, he was active in the IT industry with various forms of IT development. He is involved in all aspects of Foytech, from product design and programming to precision tests of Rumpole and server installations. Richard is supported by a management team that combines deep legal expertise with knowledge about the possibilities with the latest AI innovations.",
+    "text2": "The board of directors includes Andreas Lindström, Henrik Ståhlberg, Jonas Conradsson, and Madeleine Jönsson. Together they ensure that Foytech remains at the cutting edge of legal technology, continuously evolving to meet the changing needs of modern law firms."
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "q1": "Do Foytech's solutions follow the Swedish Bar Association's guidelines?",
+    "a11": "In the free version of Rumpole, different AI engines are used from time to time. This means that external AI engines may be used, which means that sensitive data (such as confidential information) should not be entered in prompts, but only pure legal data queries, such as requesting the drafting of a memo/legal research on a certain issue. However, Foytech cannot be held responsible if Rumpole is used in violation of these guidelines.",
+    "a12": "Foytech's professional platform has features to use a local AI engine when processing classified data, enabling the handling of such data with AI technology. Please contact Foytech for further details on how its professional platform has been designed for adherance to strict customer guidelines on AI usage.",
+    "q2": "What type of data is used in Rumpole?",
+    "a2": "Rumpole is entirely based on public legal data. In Foytech's professional platform, it is possible to add your own data sets that complement the public legal data.",
+    "q3": "What's the difference between the free and professional versions of Rumpole?",
+    "a31": "Rumpole is a basic solution that uses smaller AI engines than the professional solution. Rumpole is based on public legal data only, while the professional solution can be tailored to the customer's own data. The professional version also has functionality for work products other than legal research, with support for drafting court submissions, for example.",
+    "a32": "The professional platform also enables the use of classified data by the option of using external AI engines for such data handling. The professional solution is also customizable graphically, i.e. can be customized according to the customer's wishes on platform name and graphic profile. However, the free version uses the same proprietary algorithms for data management as the professional version.",
+    "q4": "Does Foyen Law Firm have any insight into data at Foytech?",
+    "a41": "No, Foyen Law Firm is a client of Foytech but has no ownership in Foytech and Foytech handles all customer data with strict confidentiality. No customer has access to any other customer's data. The professional version is generally set up on customer-specific servers, unless otherwise agreed.",
+    "a42": "The architecture of Foytech's platform is continuously refined based on feedback from all customers. Before Foytech was spun off into a separate company, the architecture refinement was solely based on feedback from the various legal area specialists in Foyen."
+  },
+  "contact-form": {
+    "heading": "Ready to see it in action?",
+    "text": "Fill out the form to get started. We'll provide you with access to our free version of Rumpole and a short introduction to the platform and the features of the professional version.",
+    "form-heading": "Get started with",
+    "name": "Full name",
+    "email": "Email",
+    "company": "Company",
+    "submit": "Submit request",
+    "submitting": "Submitting...",
+    "success": "Thank you for your request!<br />We will get back to you shortly.",
+    "error": "An error occurred. Please try again."
+  },
+  "about": {
+    "title": "Foyen launches Foytech for AI technology in Nordic law",
+    "body": "Foytech emerged from an internal project within Foyen Law Firm. The initial development took place over a six-month period as a partner-led project with the support of AI-specialized programmers. The solution is continuously evaluated by various legal specialists within Foyen and is continuously improved.",
+    "detail": "Foytech's tool is now used daily within Foyen and by other customers of Foytech. Foyen assesses that the tool meets the highest quality standards for generative AI in Swedish law. \n\nThe development of Foytech's technology was led within Foyen by Richard Sahlberg, who also leads the continued development within Foytech. Richard Sahlberg is the CEO of Foytech and a board member alongside Andreas Lindström, Henrik Ståhlberg, Jonas Conradsson, and Madeleine Jönsson."
+  },
+  "service": {
+    "title": "Foyen launches Foytech for AI technology in Nordic law",
+    "body": "We have a platform that can be used with ready-made sets of legal data, the client's own data, hosted on Foytech's servers or hosted on the customer's own internal servers, using internal or external AI engines, and with or without customizations of the graphical profile and domain name based on the customer's wishes/needs. Foytech arranges demonstrations of possible professional solutions upon request."
+  },
+  "contact": {
+    "heading": "Got questions? We can help!",
+    "text": "Contact us anytime and we'll do our best to assist you.",
+    "general": "General",
+    "support": "Support"
+  },
+  "footer": {
+    "copyRight": "",
+    "Privacy": "Privacy and data protection",
+    "terms-of-service": "Terms of service"
+  },
+  "gdpr": {
+    "heading": "Privacy and Data Protection",
+    "text": "Foytech follows GDPR and the solution is designed to comply with the Swedish Bar Association's guidelines for AI usage.",
+    "link-text": "Link to the Swedish Bar Association's guidelines"
+  },
+  "terms-of-service": {
+    "heading": "General Terms of Service",
+    "text": "Foytech provides infrastructure and public legal data. Foytech takes no responsibility for the information generated by the platform or for information that customers add to the platform.",
+    "full-terms": [
+      {
+        "title": "1. Introduction",
+        "content": [
+          "These general terms of service (“Terms“) apply to the use of Foytech AB's (“Foytech”) AI platform (“Platform”). By using the Platform, the user (“User”) accepts these Terms."
+        ]
+      },
+      {
+        "title": "2. Usage",
+        "content": [
+          "2.1 Foytech grants the User a limited, non-exclusive, non-transferable right to use the Platform in accordance with these Terms.",
+          "2.2 The User may not copy, modify, distribute, sell or rent out any part of the Platform."
+        ]
+      },
+      {
+        "title": "3. Liability",
+        "content": [
+          "3.1 The Platform is provided “as is“ without any warranties, express or implied.",
+          "3.2 The Platform and the responses generated by the Platform are based on publicly available legal data. FoyTech takes no responsibility for the accuracy, completeness and/or up-to-dateness of the legal data.",
+          "3.3 FoyTech also has no responsibility for information that the User adds to the Platform.",
+          "3.4 The use of the Platform and the responses generated by the Platform do not constitute advice and cannot be equated with this. FoyTech thus takes no responsibility for any financial consequences resulting from the given answers and the User's use of them, including the User's possible advice to third parties.",
+          "3.5 Under no circumstances can FoyTech be held liable to the User for indirect losses or consequential damages including but not limited to business losses, loss of expected profit, loss and/or recovery of data, loss of goodwill or other types of consequential damages. FoyTech's total liability under these Terms and the User's use of the Platform is limited to one (1) price base amount.",
+          "3.6 In the event of a User's breach of the Terms, the User shall, in addition to any claims for compensation for unauthorized use of the Platform, compensate FoyTech for all damages incurred by FoyTech as a result of such breach of contract."
+        ]
+      },
+      {
+        "title": "4. Intellectual Property Rights",
+        "content": [
+          "4.1 Foytech, or the third party from which Foytech derives its rights, retains ownership of all its rights (including intellectual property rights) related to the Platform, and the User's access to the Platform does not imply any grant of license or other right beyond what is stated in section 2.1.",
+          "4.2 The User shall respect Foytech's, and where applicable third party's, rights, and the User is, without limitation of amount, responsible for violations of these rights, including unauthorized forwarding of the Platform or related rights to third parties.",
+          "4.3 Reproduction, distribution and other making available or disposal of the Platform is not permitted without Foytech's consent."
+        ]
+      },
+      {
+        "title": "5. Confidentiality and Data Protection",
+        "content": [
+          "5.1 Foytech will process the User's personal data in accordance with Foytech's privacy policy.",
+          "5.2 The User is responsible for ensuring that the User has the right to share any information the User uploads to the Platform."
+        ]
+      },
+      {
+        "title": "6. Shutdown and Termination",
+        "content": [
+          "FoyTech may at any time and without giving reasons shut down the Platform as a whole and/or terminate or shut down the User's access to the Platform. Upon such shutdown and/or termination, the User's right to use the Platform ceases immediately."
+        ]
+      },
+      {
+        "title": "7. Changes to the Terms",
+        "content": [
+          "Foytech has the right to change these Terms at any time. Continued use of the Platform after such changes constitutes the User's acceptance of the new Terms."
+        ]
+      },
+      {
+        "title": "8. Applicable Law and Disputes",
+        "content": [
+          "These Terms shall be governed by and construed in accordance with Swedish law. Any disputes shall be settled by a general court."
+        ]
+      }
+    ]
+  },
+  "news": {
+    "heading": "Foytech News",
+    "subheading": "Stay ahead with our latest AI news from the legal industry and beyond",
+    "moreNews": "More news",
+    "aramcoGroq": {
+      "heading": "Aramco Digital and Groq Partner on Mega Data Center in Saudi Arabia",
+      "description": "In a groundbreaking move set to reshape the global AI landscape, Aramco Digital, the tech arm of energy titan Aramco, and AI innovator Groq Inc. have joined forces to construct a data center in Saudi Arabia.",
+      "videoCaption": "AI-generated videocast based on public sources. No manual editing.",
+      "paragraphs": [
+        "Aramco Digital, a subsidiary of energy giant Aramco, has partnered with AI startup Groq to construct the world's largest AI inferencing data center in Saudi Arabia. Set to be operational by the end of 2024, this ambitious project aims to position the Kingdom as a leader in AI and cloud computing.",
+        "The facility will initially house 19,000 of Groq's advanced language processing units (LPUs), with plans to expand to 200,000 LPUs. These units are designed for large-scale AI workloads, promising unparalleled speed and efficiency in data processing. This initiative aligns with Saudi Arabia's Vision 2030, supporting economic diversification and technological advancement.",
+        "Access to this cutting-edge infrastructure will be available through Aramco Digital's 'nawat' marketplace, offering AI computing power as a service. This move is expected to attract global tech companies and startups to Saudi Arabia, fostering innovation and leveraging the Kingdom's strategic location and low energy costs.",
+        "Industry experts highlight the significance of this partnership in meeting the growing global demand for AI services. The project represents a key investment in one of the world's fastest-growing regions for AI consumption, solidifying Saudi Arabia's position in the global tech landscape.",
+        "Following a Memorandum of Understanding signed at the LEAP technology event, this initiative promises to revolutionize AI and cloud computing sectors, driving innovation, enhancing sustainability, and reinforcing digital excellence within the Kingdom and beyond."
+      ]
+    },
+    "qura": {
+      "heading": "Foyen's AI Success Story with Qura and Foytech - Now Available to All",
+      "description": "After trying several AI products, Foyen decided to move forward only with Qura and Foytech, which they have rolled out across the entire firm of nearly 100 practitioners.",
+      "items": [
+        {
+          "body": "After trying several AI products, Foyen decided to move forward only with Qura and Foytech, which they have rolled out across the entire firm of nearly 100 practitioners.",
+          "quote": "“Using Qura as the new generation of search engines to efficiently retrieve necessary sources for extended legal research and quickly verify generative AI output has created an unbeatable combination with Foytech's Generative AI platform. Going back to a traditional legal workflow is simply not an option.”",
+          "citee": "- Madeleine Jönsson, Partner at Foyen"
+        },
+        {
+          "body": "The Foytech platform, which started as an internal GenAI project, worked so well that Foyen decided to move the platform to Foytech, an independent company, which will launch to the entire Nordic legal market.",
+          "quote": "“Combining Foytech's generative AI with Qura's non-generative AI search has yielded incredible productivity gains across the firm.”",
+          "citee": "- Richard Sahlberg, partner at Foyen and CEO at Foytech"
+        },
+        {
+          "body": "Inspired by Foyen's AI success in combining the two tools, Qura and Foytech will now enter into a partnership allowing overlapping customers to easily use both products together to create a powerful AI toolkit.",
+          "quote": "“We have seen many GenAI platforms, and the Foytech platform stands out. Foyen has demonstrated the value in combining Qura with the Foytech platform, which this partnership aims to bring to a broader audience.”",
+          "citee": "- Arvid Winterfeldt, CEO Qura"
+        }
+      ],
+      "conclusion": "More information about this partnership will be communicated to Qura's and Foytech's customers."
+    },
+    "podcast": {
+      "heading": "The reasoning revolution behind OpenAI's o1 model",
+      "description": "Foytech has published its first AI-generated podcast. Based on tech innovations from the last week, both the script and audio is entirely AI-generated based on public sources, with no manual editing.",
+      "listen": "Listen to the podcast here:"
+    }
+  }
+}

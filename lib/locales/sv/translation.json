@@ -1,0 +1,187 @@
+{
+  "navBarItems": {
+    "news": "Nyheter",
+    "contact": "Kontakt"
+  },
+  "cta": "Kom igång",
+  "back": "Tillbaka",
+  "home": {
+    "heading": "Maximera juridisk produktivitet med vår AI-plattform",
+    "text": "Foytech tillhandahåller skräddarsydda AI-lösningar för advokatfirmor och andra aktörer inom juristbranschen."
+  },
+  "foytech": {
+    "heading": "Foytechs uppdrag",
+    "text1": "Under ledning av advokat Richard Sahlberg har Foytech vuxit från ett internt projekt på Foyen Advokatfirma till en toppmodern AI-plattform som används av advokatfirmor i Sverige och även utomlands.",
+    "text2": "Plattformen grundades för att effektivisera framtagande av arbetsprodukter i advokatbranschen och förfinas kontinuerligt av yrkesverksamma inom området.",
+    "text3": "Detta säkerställer att plattformen uppfyller de högsta standarderna för tillämpning av generativ AI inom svensk rätt."
+  },
+  "rumpole": {
+    "heading": "Introducerar",
+    "text1": "Foytechs flaggskeppsprodukt är en robust plattform för advokater. Systemet är mycket flexibelt och kan anpassas till färdiga eller anpassade datamängder, olika hostingalternativ och flera AI-motorer.",
+    "text2": "Rumpole kan skräddarsys efter Ditt företags specifika behov, inklusive anpassad branding och domännamn. För en närmare titt på våra lösningar kan Du begära tillgång till gratisversionen och då också få en introduktion till plattformen och vad som finns i den professionella versionen."
+  },
+  "team": {
+    "heading": "Teamet bakom Foytech",
+    "text1": "Medgrundaren Richard Sahlberg har arbetat på Foyen Advokatfirma sedan 2010 och är specialiserad på entreprenadrätt och tvistemål. Dessförinnan var han verksam inom IT-branschen med olika former av IT-utveckling.",
+    "text2": "Han är involverad hands-on i alla delar av Foytech, från produktdesign och programmering till precisionstester av Rumpole och serverinstallationer. Richard har stöd av AI-specialiserade programmerare och en ledningsgrupp som kombinerar djup kompetens inom svensk rätt med teknisk förståelse för de allra senaste AI-möjligheterna.",
+    "text3": "I styrelsen ingår också advokaterna Andreas Lindström, Henrik Ståhlberg, Jonas Conradsson och Madeleine Jönsson. Tillsammans ser de till att Foytech fortsätter att ligga i framkant inom rättsteknologi och kontinuerligt utvecklas för att möta de snabbt förändrade behoven hos moderna advokatbyråer."
+  },
+  "faq": {
+    "heading": "Frågor och svar",
+    "q1": "Följer Foytechs lösningar Advokatsamfundets riktlinjer?",
+    "a11": "I gratisversionen av Rumpole används olika AI-motorer från tid till annan. Detta betyder att externa AI-motorer kan användas, vilket innebär att känslig data (såsom sekretesskyddad information) inte bör anges i promptar utan endast rena frågor om rättsdata, såsom att begära upprättande av PM/rättsutredning om viss fråga. Foytech kan dock inte ansvara för om Rumpole används i strid med dessa riktlinjer.",
+    "a12": "Foytechs professionella plattform har funktioner för att arbeta mot lokal AI-motor vid behandling av sekretesskyddad data, så att även sådan data kan användas med AI-behandling. Kontakta gärna Foytech för närmare genomgångar av hur dess professionella plattform utformats för att möjliggöra följande av rådande riktlinjer i användandet.",
+    "q2": "Vad är det för data som används i Rumpole?",
+    "a2": "Rumpole är helt baserad på publik rättsdata. I den professionella versionen finns möjligheter att tillföra egna uppsättningar data som kompletterar den publika rättsdatan.",
+    "q3": "Vad skiljer gratisversionen av Rumpole från den professionella versionen?",
+    "a31": "Rumpole är en grundlösning helt baserad på publik rättsdata, medan den professionella lösningen kan skräddarsys utifrån kundens egen data. Den professionella plattformen har också funktionalitet för andra arbetsprodukter än rättsutredning, med stöd för exempelvis processkrifter.",
+    "a32": "Den professionella plattformen möjliggör också användande av sekretesskyddad data genom att inte använda sig av externa AI-motorer för sådan funktionalitet. Den professionella lösningen är vidare helt anpassningsbar grafiskt, d.v.s. kan anpassas utifrån kundens önskemål på plattformsnamn och grafisk profil. Gratisversionen av Rumpole använder dock samma egenutvecklade algoritmer för datahantering som den professionella versionen.",
+    "q4": "Har Foyen Advokatfirma någon insyn i data hos Foytech?",
+    "a41": "Nej, Foyen Advokatfirma är kund hos Foytech men har inget ägande i Foytech och Foytech hanterar all kunddata med full sekretess. Ingen kund har åtkomst till någon annan kunds data. Den kundspecifika plattformen upprättas generellt på en kundspecifik server, om inte annat överenskoms.",
+    "a42": "Arkitekturen i Foytechs lösningar förädlas löpande utifrån återkoppling från alla kunder. Innan Foytech avknoppades till ett separat och fristående bolag skedde arkitekturutformningen enbart utifrån återkoppling från användandet av de olika rättsområdesspecialisterna inom Foyen."
+  },
+  "contact-form": {
+    "heading": "Redo att testa?",
+    "text": "Fyll i formuläret för att komma igång. Vi kommer att kontakta Dig för att ge en introduktion och tillgång till vår gratisversion av Rumpole.",
+    "form-heading": "Kom igång med",
+    "name": "Namn",
+    "email": "Email",
+    "company": "Företag",
+    "submit": "Skicka förfrågan",
+    "submitting": "Skickar...",
+    "success": "Tack för din förfrågan!<br />Vi återkommer så fort vi kan.",
+    "error": "Ett fel uppstod tyvärr. Försök igen."
+  },
+  "about": {
+    "title": "Foyen lanserar Foytech för AI-teknik inom nordisk juridik",
+    "body": "Foytech är sprunget ur ett internprojekt inom Foyen Advokatfirma. Den initiala utvecklingen skedde under ett halvårs tid som ett delägarlett projekt med stöd av AI-specialiserade programmerare. Lösningen utvärderas löpande av olika rättsområdesspecialister inom Foyen och förbättrades kontinuerligt.",
+    "detail": "Foytechs verktyg används numera dagligen inom Foyen och hos andra kunder till Foytech. Foyen bedömer att verktyget håller högsta kvalitetsnivå för generativ AI inom svensk juridik. \n\nUtvecklingen av Foytechs teknik leddes inom Foyen av Richard Sahlberg, som också leder den fortsatta utvecklingen inom Foytech. Richard Sahlberg är VD för Foytech och styrelseledamot jämte Andreas Lindström, Henrik Ståhlberg, Jonas Conradsson och Madeleine Jönsson."
+  },
+  "service": {
+    "title": "Foyen lanserar Foytech för AI-teknik inom nordisk juridik",
+    "body": "Vi har en plattform som kan användas med färdiga uppsättningar rättsdata, klientens egen data, hostat på Foytechs servrar eller hostat på kundens egna interna servrar, med användande av interna eller externa AI-motorer och med eller utan anpassningar av grafisk profil och domännamn utifrån kundens önskemål/behov. Foytech ordnar med demonstration av möjliga professionella lösningar på förfrågan."
+  },
+  "contact": {
+    "heading": "Har du frågor?",
+    "text": "Kontakta oss gärna och vi kommer göra vårt bästa för att hjälpa dig.",
+    "general": "Allmänt",
+    "support": "Support"
+  },
+  "footer": {
+    "copyRight": "",
+    "Privacy": "Integritet och dataskydd",
+    "terms-of-service": "Användarvillkor"
+  },
+  "gdpr": {
+    "heading": "Integritet och dataskydd",
+    "text": "Foytech följer GDPR och lösningen är utformad för att följa advokatsamfundets riktlinjer för AI-användning.",
+    "link-text": "Länk till advokatsamfundets riktlinjer"
+  },
+  "terms-of-service": {
+    "heading": "Allmänna Användarvillkor",
+    "text": "Foytech tillhandahåller infrastruktur och publik rättsdata. Foytech tar inget ansvar för informationen som genereras av plattformen eller för information som kunder tillför plattformen.",
+    "full-terms": [
+      {
+        "title": "1. Inledning",
+        "content": [
+          "Dessa allmänna användarvillkor (“Villkoren“) gäller för användning av Foytech AB:s (“Foytech“) AI-plattform (“Plattformen“). Genom att använda Plattformen godkänner användaren (“Användaren“) dessa Villkor."
+        ]
+      },
+      {
+        "title": "2. Användning",
+        "content": [
+          "2.1 Foytech beviljar Användaren en begränsad, icke-exklusiv, icke-överlåtbar rätt att använda Plattformen i enlighet med dessa Villkor.",
+          "2.2 Användaren får inte kopiera, modifiera, distribuera, sälja eller hyra ut någon del av Plattformen."
+        ]
+      },
+      {
+        "title": "3. Ansvar",
+        "content": [
+          "3.1 Plattformen tillhandahålls “i befintligt skick” utan några garantier, uttryckliga eller underförstådda.",
+          "3.2 Plattformen och de svar som generas av Plattformen bygger på publikt tillgänglig rättsdata. Foytech tar inget ansvar för att rättsdatan är korrekt, komplett och/eller uppdaterad.",
+          "3.3 Foytech har inte heller något ansvar för information som Användaren tillför Plattformen.",
+          "3.4 Användningen av Plattformen och de svar som genereras av Plattformen utgör inte rådgivning och kan inte likställas med detta. Foytech tar således inget ansvar för några ekonomiska konsekvenser som följer av de givna svaren och Användarens användning av dem, innefattande Användarens eventuella rådgivning till tredje parter.",
+          "3.5 Under inga omständigheter kan Foytech hållas ansvarig gentemot Användaren för indirekta förluster eller följdskador inklusive men inte begränsat till rörelseförluster, förlust av förväntad vinst, förlust och/eller återvinning av data, förlust av goodwill eller andra typer av följdskador. FoyTechs totala ansvar under dessa Villkor och Användarens användning av Plattformen är begränsat till ett (1) prisbasbelopp.",
+          "3.6 I händelse av en Användares brott mot Villkoren ska Användaren, utöver eventuella anspråk på ersättning för obehörigt utnyttjande av Plattformen, ersätta Foytech för samtliga skador som uppstår för Foytech till följd av sådant avtalsbrott."
+        ]
+      },
+      {
+        "title": "4. Immateriella rättigheter",
+        "content": [
+          "4.1 Foytech, eller tredje part från vilken Foytech härleder sina rättigheter, behåller äganderätten till alla sina rättigheter (innefattande immateriella rättigheter) hänförliga till Plattformen, och Användarens åtkomst till Plattformen innebär inte någon upplåtelse av licens eller annan rättighet utöver vad som framgår av punkt 2.1.",
+          "4.2 Användaren ska respektera Foytechs, och i förekommande fall tredje parts, rättigheter, och Användaren är, utan beloppsbegränsning, ansvarig för brott mot dessa rättigheter, inklusive obehörigt vidarebefordrande av Plattformen eller därtill hörande rättigheter till tredje part.",
+          "4.3 Reproduktion, distribution och annat tillgängliggörande eller förfogande över Plattformen är inte tillåtet utan Foytechs medgivande."
+        ]
+      },
+      {
+        "title": "5. Sekretess och dataskydd",
+        "content": [
+          "5.1 Foytech kommer att behandla Användarens personuppgifter i enlighet med Foytechs integritetspolicy.",
+          "5.2 Användaren ansvarar för att säkerställa att Användaren har rätt att dela eventuell information Användaren laddar upp till Plattformen."
+        ]
+      },
+      {
+        "title": "6. Nedstängning och uppsägning",
+        "content": [
+          "Foytech kan när som helst och utan angivande av skäl stänga ner Plattformen som helhet och/eller säga upp eller stänga ner Användarens tillgång till Plattformen. Vid sådan nedstängning och/eller uppsägning upphör Användarens rätt att använda Plattformen omedelbart."
+        ]
+      },
+      {
+        "title": "7. Ändringar av Villkoren",
+        "content": [
+          "Foytech har rätt att ändra dessa Villkor när som helst. Fortsatt användning av Plattformen efter sådana ändringar utgör Användarens godkännande av de nya Villkoren."
+        ]
+      },
+      {
+        "title": "8. Tillämplig lag och tvister",
+        "content": [
+          "Dessa Villkor ska regleras och tolkas i enlighet med svensk lag. Eventuella tvister ska avgöras av allmän domstol."
+        ]
+      }
+    ]
+  },
+  "news": {
+    "heading": "Foytech Nyheter",
+    "subheading": "Håll dig uppdaterad med våra senaste AI-nyheter",
+    "moreNews": "Fler nyheter",
+    "aramcoGroq": {
+      "heading": "Aramco Digital och Groq samarbetar om megadatacenter i Saudiarabien",
+      "description": "I ett revolutionerande drag som förväntas förändra den globala AI-scenen, har Aramco Digital, dotterbolag till energijätten Aramco, och AI-innovatören Groq inlett ett partnerskap för att bygga världens största AI-inferensdatacenter i Saudiarabien.",
+      "videoCaption": "AI-genererad video baserad på offentliga källor. Ingen manuell redigering har gjorts.",
+      "paragraphs": [
+        "Aramco Digital, ett dotterbolag till energijätten Aramco, har ingått partnerskap med AI-startupen Groq för att bygga världens största AI-inferensdatacenter i Saudiarabien. Detta ambitiösa projekt, som förväntas vara i drift i slutet av 2024, syftar till att positionera kungadömet som ledande inom AI och molnberäkning.",
+        "Anläggningen kommer initialt att inhysa 19 000 av Groqs avancerade språkprocesseringsenheter (LPU:er), med planer på att utöka till 200 000 LPU:er. Dessa enheter är utformade för storskaliga AI-arbetsbelastningar och lovar oöverträffad hastighet och effektivitet i databehandling. Detta initiativ ligger i linje med Saudiarabiens Vision 2030, som stödjer ekonomisk diversifiering och teknologisk utveckling.",
+        "Tillgång till denna toppmoderna infrastruktur kommer att finnas tillgänglig via Aramco Digitals marknadsplats 'nawat', som erbjuder AI-beräkningskraft som en tjänst. Detta drag förväntas locka globala teknikföretag och startups till Saudiarabien, främja innovation och dra nytta av kungadömets strategiska läge och låga energikostnader.",
+        "Branschexperter betonar betydelsen av detta partnerskap för att möta den växande globala efterfrågan på AI-tjänster. Projektet representerar en nyckelinvestering i en av världens snabbast växande regioner för AI-konsumtion, vilket befäster Saudiarabiens position i det globala tekniklandskapet.",
+        "Efter ett samförståndsavtal som undertecknades vid teknologievenemanget LEAP, lovar detta initiativ att revolutionera AI- och molnberäkningssektorerna, driva innovation, förbättra hållbarhet och stärka digital excellens inom kungadömet och bortom."
+      ]
+    },
+    "qura": {
+      "heading": "Foyens AI-framgångshistoria med Qura och Foytech - nu tillgänglig för alla",
+      "description": "Efter att ha testat flera AI-produkter beslutade Foyen att endast gå vidare med Qura och Foytech, en lösning de har implementerat över hela byrån med nästan 100 jurister.",
+      "items": [
+        {
+          "body": "Efter att ha testat flera AI-produkter beslutade Foyen att endast gå vidare med Qura och Foytech, en lösning de har implementerat över hela byrån med nästan 100 jurister.",
+          "quote": "“Att använda Qura som den nya generationens sökmotor för att effektivt hämta nödvändiga källor för omfattande juridisk utredning och snabbt verifiera data genererad med generativ AI har skapat en oslagbar kombination med Foytechs generativa AI-plattform. Att återgå till ett traditionellt arbetssätt är helt enkelt inte ett alternativ.”",
+          "citee": "- Madeleine Jönsson, Partner at Foyen"
+        },
+        {
+          "body": "Foytech-plattformen, som började som ett internt GenAI-projekt, fungerade så bra att Foyen beslutade att flytta plattformen till Foytech, ett fristående företag, som arbetar med lansering mot hela den nordiska juridiska marknaden. \n\nQura används både som ett fristående verktyg för att söka i juridiska databaser och som ett komplement till Foytech, där GenAI-data verifieras mot juridiska källor genom Qura.",
+          "quote": "“Att kombinera Foytechs generativa AI med Quras icke-generativa AI-sökning har gett otroliga produktivitetsökningar.”",
+          "citee": "- Richard Sahlberg, partner på Foyen och VD för Foytech"
+        },
+        {
+          "body": "Inspirerad av Foyens AI-framgång i att kombinera de två verktygen, ingår Qura och Foytech nu ett strategiskt samarbete som gör det möjligt för överlappande kunder att enkelt använda båda produkterna tillsammans för att skapa ett kraftfullt AI-redskap.",
+          "quote": "“Vi har sett många GenAI-plattformar, och Foytech-plattformen sticker ut. Foyen har demonstrerat värdet av att kombinera Qura med Foytech-plattformen, vilket detta partnerskap syftar till att sprida till en bredare publik.”",
+          "citee": "- Arvid Winterfeldt, VD för Qura"
+        }
+      ],
+      "conclusion": "Mer information om detta partnerskap kommer att kommuniceras till Quras och Foytechs kunder."
+    },
+    "podcast": {
+      "heading": "OpenAI's o1-modell: den nya eran av AI-resonemang",
+      "description": "Foytech har publicerat sin första AI-genererade podcast. Baserat på teknikinnovationer från förra veckan, är både manus och ljud helt AI-genererade baserat på offentliga källor, utan manuell redigering.",
+      "listen": "Lyssna på podcasten här:"
+    }
+  }
+}
