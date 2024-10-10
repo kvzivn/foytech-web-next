@@ -19,9 +19,9 @@ export const languageName = new Intl.DisplayNames(supportedLanguages, {
 })
 
 const getInitialLanguage = () => {
-  if (typeof window !== "undefined") {
-    return localStorage.getItem("language") || "sv"
-  }
+  // if (typeof window !== "undefined") {
+  //   return localStorage.getItem("language") || "sv"
+  // }
   return "sv"
 }
 

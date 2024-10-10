@@ -8,12 +8,12 @@ import { GlobeIcon } from "lucide-react"
 const LanguageSelector = ({ className }: { className?: string }) => {
   const { i18n } = useTranslation()
 
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem("language") || "sv"
-    if (i18n.language !== savedLanguage) {
-      i18n.changeLanguage(savedLanguage)
-    }
-  }, [i18n])
+  // useEffect(() => {
+  //   const savedLanguage = localStorage.getItem("language") || "sv"
+  //   if (i18n.language !== savedLanguage) {
+  //     i18n.changeLanguage(savedLanguage)
+  //   }
+  // }, [i18n])
 
   const changeLanguage = () => {
     const newLanguage = i18n.language === "en" ? "sv" : "en"

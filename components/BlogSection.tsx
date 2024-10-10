@@ -16,7 +16,6 @@ type BlogPost = {
   imageUrl: string
   link: string
   date: string
-  readTime: string
 }
 
 const BlogSection = () => {
@@ -41,8 +40,7 @@ const BlogSection = () => {
       category: "Infrastruktur",
       imageUrl: "/images/aramco-groq-blog-post.webp",
       link: "/blog/aramco-groq",
-      date: "Mar 11, 2024",
-      readTime: "9 min read",
+      date: "Sep 21, 2024",
       featured: true,
     },
     {
@@ -52,8 +50,7 @@ const BlogSection = () => {
       category: "Podcast",
       imageUrl: "/images/o1-blog-post.webp",
       link: "/blog/o1-podcast",
-      date: "Jun 6, 2024",
-      readTime: "12 min read",
+      date: "Sep 17, 2024",
       featured: false,
     },
     {
@@ -63,8 +60,7 @@ const BlogSection = () => {
       category: "Nyheter",
       imageUrl: "/images/foytech-qura.webp",
       link: "/blog/foytech-qura",
-      date: "Mar 15, 2024",
-      readTime: "1 min read",
+      date: "Sep 1, 2024",
       featured: false,
     },
   ]
@@ -121,19 +117,19 @@ const BlogPost = ({ post }: { post: BlogPost }) => {
   })
 
   return (
-    <Link href={post.link}>
-      <div ref={ref} className="flex flex-col md:flex-row gap-20 pt-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView && { opacity: 1, y: 0 }}
-          transition={{
-            type: "spring",
-            duration: 1.25,
-            delay: 0.15,
-            bounce: 0,
-          }}
-          className="w-[56rem]"
-        >
+    <div ref={ref} className="flex flex-col md:flex-row gap-20 pt-16">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView && { opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          duration: 1.25,
+          delay: 0.15,
+          bounce: 0,
+        }}
+        className="w-[56rem]"
+      >
+        <Link href={post.link}>
           <Image
             src={post.imageUrl}
             alt={post.title}
@@ -141,30 +137,30 @@ const BlogPost = ({ post }: { post: BlogPost }) => {
             height={640}
             className="rounded-lg object-cover w-full h-full border"
           />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView && { opacity: 1, y: 0 }}
-          transition={{
-            type: "spring",
-            duration: 1.25,
-            delay: 0.35,
-            bounce: 0,
-          }}
-          className="flex flex-col w-full"
-        >
-          <p className="text-lg text-secondary-foreground mb-2">
-            {post.category}
-          </p>
+        </Link>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView && { opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          duration: 1.25,
+          delay: 0.35,
+          bounce: 0,
+        }}
+        className="flex flex-col w-full"
+      >
+        <p className="text-lg text-secondary-foreground mb-2">
+          {post.category}
+        </p>
+        <Link href={post.link}>
           <h3 className="text-[2.35rem] leading-[1.25] mb-2">{post.title}</h3>
-          <div className="flex items-end flex-grow">
-            <p className="text-sm text-gray-400">
-              {post.date} · {post.readTime}
-            </p>
-          </div>
-        </motion.div>
-      </div>
-    </Link>
+        </Link>
+        <div className="flex items-end flex-grow">
+          <p className="text-sm text-gray-400">{post.date}</p>
+        </div>
+      </motion.div>
+    </div>
   )
 }
 

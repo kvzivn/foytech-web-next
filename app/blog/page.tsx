@@ -49,7 +49,7 @@ const News = () => {
   const regularPosts = blogPostLinks.filter((post) => !post.featured)
 
   return (
-    <section className="pt-36 pb-8">
+    <section className="pt-36 pb-8 overflow-hidden">
       <Spotlights noAnimation />
       <div
         ref={headingRef}
