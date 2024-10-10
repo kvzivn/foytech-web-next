@@ -45,7 +45,7 @@ const About = () => {
               return (
                 <span
                   key={index}
-                  className="relative overflow-hidden inline-flex mr-[1rem]"
+                  className="relative overflow-hidden inline-flex mr-[0.85rem]"
                 >
                   <motion.span
                     variants={slideUp}

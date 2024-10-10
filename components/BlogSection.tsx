@@ -76,7 +76,7 @@ const BlogSection = () => {
             duration: 1.25,
             bounce: 0,
           }}
-          className="h2 mb-4"
+          className="h2"
         >
           Nyheter
         </motion.h2>

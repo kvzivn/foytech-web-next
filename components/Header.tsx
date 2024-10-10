@@ -84,7 +84,7 @@ const Header = () => {
             >
               {t("navBarItems.contact")}
             </Link>
-            <LanguageSelector className="pointer-events-auto" />
+            <LanguageSelector />
             <div className="md:hidden">
               <MobileMenu t={t} />
             </div>

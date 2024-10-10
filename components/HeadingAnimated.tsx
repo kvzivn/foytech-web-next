@@ -37,7 +37,7 @@ const HeadingAnimated: React.FC<HeadingAnimatedProps> = ({
       {heading.split(" ").map((word, index) => (
         <span
           key={index}
-          className="relative overflow-hidden inline-flex mr-[1rem]"
+          className="relative overflow-hidden inline-flex mr-[0.65rem]"
         >
           <motion.span
             variants={slideUp}

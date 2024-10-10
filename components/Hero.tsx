@@ -107,7 +107,7 @@ const Hero = () => {
               bounce: 0,
             },
           }}
-          className="grid items-start xl:place-items-end"
+          className="grid items-start justify-end"
         >
           <div className="outline outline-border -outline-offset-1 rounded-lg">
             <video
