@@ -1,14 +1,13 @@
-"use client"
-
+import type { Metadata } from "next"
 import localFont from "next/font/local"
 import { ThemeProvider } from "next-themes"
 import ScreenSizeIndicator from "@/components/ScreenSizeIndicator"
-import "./globals.css"
-import "@/lib/i18n"
 import Header from "@/components/Header"
-import Lenis from "lenis"
-import { useEffect } from "react"
+import Lenis from "@/components/Lenis"
 import Footer from "@/components/Footer"
+import i18nConfig from "@/i18n-config"
+import { notFound } from "next/navigation"
+import "./globals.css"
 
 const fontSans = localFont({
   src: [
@@ -45,24 +44,28 @@ const fontSans = localFont({
   ],
 })
 
+export function generateStaticParams() {
+  return i18nConfig.locales.map((locale) => ({ locale }))
+}
+
+export const metadata: Metadata = {
+  title: "i18n within app directory - Vercel Examples",
+  description: "How to do i18n in Next.js 13 within app directory",
+}
+
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode
+  params: { lang: string }
 }>) {
-  useEffect(() => {
-    const lenis = new Lenis()
-
-    function raf(time: number) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-  }, [])
+  if (!i18nConfig.locales.includes(params.lang)) {
+    return <p>locale Not found</p>
+  }
 
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <body
         className={`${fontSans.className} text-black bg-slate-50 dark:bg-black dark:text-white`}
       >
@@ -72,6 +75,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Lenis />
           <Header />
           {children}
           <Footer />

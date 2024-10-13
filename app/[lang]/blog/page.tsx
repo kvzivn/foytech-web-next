@@ -55,7 +55,7 @@ const News = () => {
         ref={headingRef}
         className="container !max-w-3xl pt-10 pb-16 text-center"
       >
-        <HeadingAnimated
+        {/* <HeadingAnimated
           heading={t("news.heading")}
           isInView={isInView}
           className="mb-1"
@@ -65,7 +65,7 @@ const News = () => {
           subHeading={t("news.subheading")}
           isInView={isInView}
           className="mb-8"
-        />
+        /> */}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

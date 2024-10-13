@@ -7,7 +7,6 @@ import Spotlights from "./Spotlights"
 
 const Hero = () => {
   const { t } = useTranslation()
-
   const headingText = t("home.heading")
   const words = headingText.split(" ")
 

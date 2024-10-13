@@ -16,6 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu"
 import { t, TFunction } from "i18next"
+import LanguageChanger from "./LanguageChanger"
 
 const Header = () => {
   const { scrollY } = useScroll()
@@ -84,7 +85,8 @@ const Header = () => {
             >
               {t("navBarItems.contact")}
             </Link>
-            <LanguageSelector />
+            <LanguageChanger />
+            {/* <LanguageSelector /> */}
             <div className="md:hidden">
               <MobileMenu t={t} />
             </div>
