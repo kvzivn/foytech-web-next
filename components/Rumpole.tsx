@@ -27,7 +27,7 @@ const Rumpole = () => {
             duration: 2.25,
             delay: 0.25,
           }}
-          className="w-full p-3"
+          className="w-full md:p-3"
         >
           <Image
             src="/images/foytech-rumpole.png"

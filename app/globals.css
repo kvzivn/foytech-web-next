@@ -81,7 +81,7 @@
 
 @layer utilities {
   .section {
-    @apply w-full py-28 lg:py-40;
+    @apply w-full py-8 md:py-28 lg:py-40;
   }
 
   .container {
@@ -97,7 +97,7 @@
   }
 
   .h2 {
-    @apply text-3xl md:text-5xl/relaxed font-medium;
+    @apply text-3xl md:text-5xl/snug font-medium;
   }
 
   .h3 {
@@ -105,7 +105,7 @@
   }
 
   .text {
-    @apply text-muted-foreground md:text-lg/relaxed;
+    @apply text-muted-foreground text-base/relaxed md:text-lg/relaxed;
   }
 
   .link {

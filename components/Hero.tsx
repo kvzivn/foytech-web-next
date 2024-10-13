@@ -2,7 +2,6 @@
 
 import { useTranslation } from "react-i18next"
 import { Button } from "./ui/button"
-import { Spotlight } from "./ui/spotlight"
 import { motion } from "framer-motion"
 import Spotlights from "./Spotlights"
 
@@ -10,6 +9,7 @@ const Hero = () => {
   const { t } = useTranslation()
 
   const headingText = t("home.heading")
+  const words = headingText.split(" ")
 
   const slideUp = {
     initial: {
@@ -20,12 +20,11 @@ const Hero = () => {
     animate: (i: number) => ({
       y: "0%",
       opacity: 1,
-      filter: "blur(0px)",
+      filter: "blur(0)",
       transition: {
-        type: "spring",
-        duration: 1.25,
+        duration: 1.35,
         delay: 0.75 + 0.085 * i,
-        ease: [0.785, 0.135, 0.15, 0.86],
+        ease: [0.61, 0.01, 0.09, 1.03],
       },
     }),
   }
@@ -33,17 +32,17 @@ const Hero = () => {
   return (
     <section className="section relative xl:h-screen">
       <Spotlights />
-      <div className="container relative grid gap-8 xl:grid-cols-2 xl:gap-0 py-8 xl:py-14">
+      <div className="container relative grid gap-8 xl:grid-cols-2 xl:gap-0 pt-28 xl:py-14">
         <div className="flex flex-col justify-center">
           <div className="space-y-5">
             <div className="space-y-5 sm:space-y-3">
               <div className="relative">
                 <h1 className="h1">
-                  {headingText.split(" ").map((word, index) => {
+                  {words.map((word, index) => {
                     return (
                       <span
                         key={index}
-                        className="relative overflow-hidden inline-flex mr-[1rem]"
+                        className="relative inline-flex overflow-hidden"
                       >
                         <motion.span
                           variants={slideUp}
@@ -54,6 +53,7 @@ const Hero = () => {
                         >
                           {word}
                         </motion.span>
+                        {index < words.length - 1 && <>&nbsp;</>}
                       </span>
                     )
                   })}
@@ -65,7 +65,6 @@ const Hero = () => {
                   opacity: 1,
                   y: 0,
                   transition: {
-                    type: "spring",
                     delay: 1.25,
                     duration: 1.25,
                   },
@@ -81,7 +80,6 @@ const Hero = () => {
                 opacity: 1,
                 y: 0,
                 transition: {
-                  type: "spring",
                   delay: 1.35,
                   duration: 2.5,
                 },
@@ -95,7 +93,11 @@ const Hero = () => {
           </div>
         </div>
         <motion.div
-          initial={{ opacity: 0, filter: "blur(4px)", y: 20 }}
+          initial={{
+            opacity: 0,
+            filter: "blur(4px)",
+            y: 20,
+          }}
           animate={{
             opacity: 1,
             filter: "blur(0px)",

@@ -14,40 +14,42 @@ const HeadingAnimated: React.FC<HeadingAnimatedProps> = ({
   className,
 }) => {
   const slideUp = {
-    initial: {
+    hidden: {
       y: "100%",
       opacity: 0,
       filter: "blur(4px)",
     },
-    animate: (i: number) => ({
+    visible: (i: number) => ({
       y: "0%",
       opacity: 1,
-      filter: "blur(0px)",
+      filter: "blur(0)",
       transition: {
         type: "spring",
-        duration: 1.85,
-        delay: 0.25 + 0.085 * i,
-        ease: [0.785, 0.135, 0.15, 0.86],
+        duration: 0.95,
+        delay: 0.15 + 0.065 * i,
+        ease: [0.61, 0.01, 0.09, 1.03],
+        bounce: 0,
       },
     }),
   }
 
+  const words = heading.split(" ")
+
   return (
     <h2 className={cn("h2", className)}>
-      {heading.split(" ").map((word, index) => (
-        <span
-          key={index}
-          className="relative overflow-hidden inline-flex mr-[0.65rem]"
-        >
+      {words.map((word, index) => (
+        <React.Fragment key={index}>
           <motion.span
             variants={slideUp}
             custom={index}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
+            initial="hidden"
+            animate={isInView && "visible"}
+            className="relative overflow-hidden inline-flex"
           >
             {word}
           </motion.span>
-        </span>
+          {index < words.length - 1 && " "}
+        </React.Fragment>
       ))}
     </h2>
   )

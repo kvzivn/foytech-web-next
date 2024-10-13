@@ -66,7 +66,7 @@ const BlogSection = () => {
   ]
 
   return (
-    <section className="section py-16">
+    <section className="section md:py-16">
       <div ref={blogSectionRef} className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -80,7 +80,7 @@ const BlogSection = () => {
         >
           Nyheter
         </motion.h2>
-        <div className="space-y-16 divide-y divide-primary-200/80 dark:divide-primary-900/60">
+        <div className="space-y-8 md:space-y-16 divide-y divide-primary-200/80 dark:divide-primary-900/60">
           {blogPostLinks.map((post) => (
             <BlogPost key={post.id} post={post} />
           ))}
@@ -95,7 +95,7 @@ const BlogSection = () => {
             delay: 0.35,
             bounce: 0,
           }}
-          className="flex justify-center mt-32"
+          className="flex justify-center mt-16 md:mt-32"
         >
           <Button size="lg" asChild className="text-lg">
             <Link href="/blog" className="inline-flex items-center text-black">
@@ -117,7 +117,10 @@ const BlogPost = ({ post }: { post: BlogPost }) => {
   })
 
   return (
-    <div ref={ref} className="flex flex-col md:flex-row gap-20 pt-16">
+    <div
+      ref={ref}
+      className="flex flex-col md:flex-row gap-8 md:gap-20 pt-8 md:pt-16"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={isInView && { opacity: 1, y: 0 }}
@@ -127,7 +130,7 @@ const BlogPost = ({ post }: { post: BlogPost }) => {
           delay: 0.15,
           bounce: 0,
         }}
-        className="w-[56rem]"
+        className="md:w-[56rem]"
       >
         <Link href={post.link}>
           <Image
@@ -154,7 +157,9 @@ const BlogPost = ({ post }: { post: BlogPost }) => {
           {post.category}
         </p>
         <Link href={post.link}>
-          <h3 className="text-[2.35rem] leading-[1.25] mb-2">{post.title}</h3>
+          <h3 className="text-2xl md:text-[2.35rem] md:leading-[1.25] mb-2">
+            {post.title}
+          </h3>
         </Link>
         <div className="flex items-end flex-grow">
           <p className="text-sm text-gray-400">{post.date}</p>

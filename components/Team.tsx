@@ -2,56 +2,20 @@
 
 import { useTranslation } from "react-i18next"
 import Image from "next/image"
-import {
-  motion,
-  MotionValue,
-  useInView,
-  useScroll,
-  useTransform,
-} from "framer-motion"
+import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import Link from "next/link"
+import HeadingAnimated from "./HeadingAnimated"
 
 const Team = () => {
   const { t } = useTranslation()
   const sectionRef = useRef(null)
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
+  const isInView = useInView(sectionRef, {
+    once: true,
+    margin: "0px 0px -400px 0px",
   })
 
   const headingText = "Advokaterna bakom Foytech"
-
-  const headingRef = useRef(null)
-  const isHeadingInView = useInView(headingRef, {
-    once: true,
-    margin: "0px 0px -200px 0px",
-  })
-
-  const textRef = useRef(null)
-  const isTextInView = useInView(textRef, {
-    once: true,
-    margin: "0px 0px -150px 0px",
-  })
-
-  const slideUp = {
-    initial: {
-      y: "100%",
-      opacity: 0,
-      filter: "blur(4px)",
-    },
-    animate: (i: number) => ({
-      y: "0%",
-      opacity: 1,
-      filter: "blur(0px)",
-      transition: {
-        type: "spring",
-        duration: 1.85,
-        delay: 0.25 + 0.085 * i,
-        ease: [0.785, 0.135, 0.15, 0.86],
-      },
-    }),
-  }
 
   const members = [
     {
@@ -83,51 +47,29 @@ const Team = () => {
 
   return (
     <section ref={sectionRef} className="section">
-      <div className="container flex flex-col gap-32">
-        <div ref={headingRef} className="flex justify-end">
-          <h2 className="text-[3.5rem] leading-[1.15] font-medium max-w-md text-right">
-            {headingText.split(" ").map((word, index) => {
-              return (
-                <span
-                  key={index}
-                  className="relative overflow-hidden inline-flex mr-[1rem]"
-                >
-                  <motion.span
-                    variants={slideUp}
-                    custom={index}
-                    initial="initial"
-                    animate={isHeadingInView && "animate"}
-                    key={index}
-                  >
-                    {word}
-                  </motion.span>
-                </span>
-              )
-            })}
-          </h2>
-        </div>
+      <div className="container flex flex-col md:gap-32">
+        <HeadingAnimated
+          heading={headingText}
+          isInView={isInView}
+          className="max-w-[16rem] md:max-w-sm md:ml-auto md:text-right"
+        />
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={isHeadingInView && { opacity: 1, y: 0 }}
-          transition={{ type: "spring", duration: 1.75, delay: 0.75 }}
-          className="flex gap-8 -mt-28"
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:flex gap-8 md:-mt-28">
           {members.map((member, index) => (
             <Member
               key={index}
               index={index + 1}
               member={member}
-              scrollYProgress={scrollYProgress}
+              isInView={isInView}
             />
           ))}
-        </motion.div>
+        </div>
 
-        <div className="relative">
-          <div ref={textRef} className="flex flex-col gap-4 max-w-prose mt-6">
+        <div className="relative pt-32 md:pt-0">
+          <div className="flex flex-col gap-4 max-w-prose mt-6">
             <motion.p
               initial={{ opacity: 0, y: 30 }}
-              animate={isTextInView && { opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 1.35 }}
               className="text-muted-foreground md:text-[1.15rem] leading-[1.65]"
             >
@@ -135,7 +77,7 @@ const Team = () => {
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
-              animate={isTextInView && { opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 1.35, delay: 0.25 }}
               className="text-muted-foreground md:text-[1.15rem] leading-[1.65]"
             >
@@ -143,7 +85,7 @@ const Team = () => {
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
-              animate={isTextInView && { opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 1.35, delay: 0.5 }}
               className="text-muted-foreground md:text-[1.15rem] leading-[1.65]"
             >
@@ -156,12 +98,15 @@ const Team = () => {
             viewBox="0 0 60 120"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute bottom-3 right-2"
+            className="hidden md:block absolute bottom-3 right-2"
           >
             <motion.rect
               initial={{ opacity: 0 }}
-              animate={isTextInView && { opacity: 1 }}
-              transition={{ duration: 0.75, delay: 0.65 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 0.75,
+                delay: 0.65,
+              }}
               x="30"
               y="0"
               width="30"
@@ -170,8 +115,11 @@ const Team = () => {
             />
             <motion.rect
               initial={{ opacity: 0 }}
-              animate={isTextInView && { opacity: 1 }}
-              transition={{ duration: 0.75, delay: 0.85 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 0.75,
+                delay: 0.85,
+              }}
               x="0"
               y="30"
               width="30"
@@ -180,8 +128,11 @@ const Team = () => {
             />
             <motion.rect
               initial={{ opacity: 0 }}
-              animate={isTextInView && { opacity: 1 }}
-              transition={{ duration: 0.75, delay: 1.05 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 0.75,
+                delay: 1.05,
+              }}
               x="30"
               y="60"
               width="30"
@@ -190,8 +141,11 @@ const Team = () => {
             />
             <motion.rect
               initial={{ opacity: 0 }}
-              animate={isTextInView && { opacity: 1 }}
-              transition={{ duration: 0.75, delay: 1.35 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                duration: 0.75,
+                delay: 1.35,
+              }}
               x="0"
               y="90"
               width="30"
@@ -208,20 +162,24 @@ const Team = () => {
 const Member = ({
   index,
   member,
-  scrollYProgress,
+  isInView,
 }: {
   index: number
   member: { name: string; image: string; link: string }
-  scrollYProgress: MotionValue
+  isInView: boolean
 }) => {
-  const y = useTransform(scrollYProgress, [0, 1], [(index - 1) * 50, 0])
-
   return (
     <motion.div
       className="group w-full p-2 rounded-t-xl rounded-b-md bg-primary-100 dark:bg-primary-950 hover:bg-primary-200 dark:hover:bg-primary-900 transition-colors duration-300"
+      initial={{ opacity: 0, y: index * 20 + 40 }}
+      animate={isInView && { opacity: 1, y: index * 20 }}
       whileHover={{ scale: 1.01 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      style={{ y }}
+      transition={{
+        type: "spring",
+        duration: 1.35,
+        delay: index * 0.155,
+        bounce: 0,
+      }}
     >
       <Link href={member.link} target="_blank">
         <Image
@@ -229,9 +187,9 @@ const Member = ({
           alt={member.name}
           width={440}
           height={702}
-          className="rounded-t-lg rounded-b opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+          className="w-full max-h-[18rem] md:max-h-none object-cover object-top rounded-t-lg rounded-b opacity-90 group-hover:opacity-100 transition-opacity duration-300"
         />
-        <p className="mt-3 mb-1 text-sm font-medium text-center text-accent dark:text-slate-200 transition-colors duration-300">
+        <p className="mt-3 mb-1 text-base md:text-sm font-medium text-center text-accent dark:text-slate-200 transition-colors duration-300">
           {member.name}
         </p>
       </Link>
