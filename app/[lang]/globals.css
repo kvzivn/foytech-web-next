@@ -93,7 +93,7 @@
   }
 
   .h1 {
-    @apply text-4xl sm:text-6xl md:text-[4.85rem] md:leading-[1.15] tracking-tighter font-medium;
+    @apply text-4xl sm:text-6xl md:text-[4.35rem] md:leading-[1.15] tracking-tighter font-medium;
   }
 
   .h2 {

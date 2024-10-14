@@ -1,4 +1,11 @@
 {
+  "metaTitle": "Foytech",
+  "metaDescription": "Foytech provides tailored AI solutions for law firms and other actors in the legal industry.",
+  "ogTitle": "Foytech - AI-Powered Tools for the Legal Industry",
+  "ogDescription": "Explore Foytech's AI platform designed to enhance productivity and efficiency in legal work.",
+  "ogImageAlt": "Foytech AI Legal Solutions",
+  "twitterTitle": "Foytech - AI Innovation for Legal Professionals",
+  "twitterDescription": "Explore Foytech's AI platform designed to enhance productivity and efficiency in legal work.",
   "navBarItems": {
     "news": "News",
     "contact": "Contact"
@@ -10,8 +17,10 @@
     "text": "Foytech provides tailored AI solutions for law firms and other actors in the legal industry."
   },
   "foytech": {
-    "heading": "The Foytech Mission",
-    "text": "Led by CEO Richard Sahlberg, Foytech has grown from an internal project at Foyen Law Firm to a cutting-edge AI platform used by other law firms. It was founded to empower legal experts and is continuously refined by professionals in the field, ensuring it meets the highest standards for generative AI in Swedish law."
+    "heading": "We develop the legal tools of the future for cutting-edge law firms.",
+    "text1": "Led by CEO Richard Sahlberg, Foytech has grown from an internal project at Foyen Law Firm to a cutting-edge AI platform used by other law firms.",
+    "text2": "It was founded with the mission to empower legal experts, and its platform is continuously refined and enhanced by experienced professionals in the field.",
+    "text3": "This ongoing development and expert input ensures that Foytech consistently meets and exceeds the highest standards for generative AI applications in Swedish law."
   },
   "rumpole": {
     "heading": "Introducing",
@@ -19,9 +28,10 @@
     "text2": "Rumpole can be tailored to your firm's specific needs, including customized branding and domain names. For a closer look at our solutions, request access to the free version and get an introduction to the platform and its possibilities."
   },
   "team": {
-    "heading": "The team behind Foytech",
-    "text1": "Co-Founder Richard Sahlberg has worked at Foyen Law Firm since 2010, specializing in construction law and litigation. Prior to that, he was active in the IT industry with various forms of IT development. He is involved in all aspects of Foytech, from product design and programming to precision tests of Rumpole and server installations. Richard is supported by a management team that combines deep legal expertise with knowledge about the possibilities with the latest AI innovations.",
-    "text2": "The board of directors includes Andreas Lindström, Henrik Ståhlberg, Jonas Conradsson, and Madeleine Jönsson. Together they ensure that Foytech remains at the cutting edge of legal technology, continuously evolving to meet the changing needs of modern law firms."
+    "heading": "The lawyers behind Foytech",
+    "text1": "Co-Founder Richard Sahlberg has worked at Foyen Law Firm since 2010, specializing in construction law and litigation. Prior to that, he was active in the IT industry with various forms of IT development.",
+    "text2": "He is involved in all aspects of Foytech, from product design and programming to precision tests of Rumpole and server installations. Richard is supported by a management team that combines deep legal expertise with knowledge about the possibilities with the latest AI innovations.",
+    "text3": "The board of directors includes Andreas Lindström, Henrik Ståhlberg, Jonas Conradsson, and Madeleine Jönsson. Together they ensure that Foytech remains at the cutting edge of legal technology, continuously evolving to meet the changing needs of modern law firms."
   },
   "faq": {
     "heading": "Frequently asked questions",
@@ -59,10 +69,14 @@
     "body": "We have a platform that can be used with ready-made sets of legal data, the client's own data, hosted on Foytech's servers or hosted on the customer's own internal servers, using internal or external AI engines, and with or without customizations of the graphical profile and domain name based on the customer's wishes/needs. Foytech arranges demonstrations of possible professional solutions upon request."
   },
   "contact": {
-    "heading": "Got questions? We can help!",
+    "heading": "Got questions?",
     "text": "Contact us anytime and we'll do our best to assist you.",
-    "general": "General",
-    "support": "Support"
+    "generalQuestions": "General questions",
+    "generalQuestionsDescription": "We're happy to answer questions about our services, pricing, and how we can strengthen your law firm.",
+    "emailUs": "Email us",
+    "contactSupport": "Contact support",
+    "supportDescription": "Do you have technical questions or need help with the platform? Contact our support team here.",
+    "emailSupport": "Email support"
   },
   "footer": {
     "copyRight": "",
@@ -138,10 +152,11 @@
     ]
   },
   "news": {
-    "heading": "Foytech News",
+    "heading": "News",
     "subheading": "Stay ahead with our latest AI news from the legal industry and beyond",
     "moreNews": "More news",
     "aramcoGroq": {
+      "category": "Infrastructure",
       "heading": "Aramco Digital and Groq Partner on Mega Data Center in Saudi Arabia",
       "description": "In a groundbreaking move set to reshape the global AI landscape, Aramco Digital, the tech arm of energy titan Aramco, and AI innovator Groq Inc. have joined forces to construct a data center in Saudi Arabia.",
       "videoCaption": "AI-generated videocast based on public sources. No manual editing.",
@@ -154,7 +169,8 @@
       ]
     },
     "qura": {
-      "heading": "Foyen's AI Success Story with Qura and Foytech - Now Available to All",
+      "category": "Legal Industry",
+      "heading": "Foyen's AI success story with Qura and Foytech - Now available to all",
       "description": "After trying several AI products, Foyen decided to move forward only with Qura and Foytech, which they have rolled out across the entire firm of nearly 100 practitioners.",
       "items": [
         {
@@ -176,7 +192,8 @@
       "conclusion": "More information about this partnership will be communicated to Qura's and Foytech's customers."
     },
     "podcast": {
-      "heading": "OpenAI o1 Podcast",
+      "category": "Podcast",
+      "heading": "OpenAI's o1 model: the new era of AI reasoning",
       "description": "Foytech has published its first AI-generated podcast. Based on tech innovations from the last week, both the script and audio is entirely AI-generated based on public sources, with no manual editing.",
       "listen": "Listen to the podcast here:"
     }

@@ -1,86 +1,72 @@
-"use client"
+import initTranslations from "@/app/i18n"
+import TranslationsProvider from "@/components/TranslationsProvider"
+import O1PodcastContent from "./content"
+import { Metadata } from "next"
 
-import { useTranslation } from "react-i18next"
-import { ArrowLeftIcon } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+const i18nNamespaces = ["home"]
 
-export default function O1PodcastPost() {
-  const { t } = useTranslation()
+type Props = {
+  params: { lang: string }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { t } = await initTranslations(params.lang, i18nNamespaces)
+
+  const postImage = "/images/o1-blog-post.webp"
+
+  return {
+    title: t("news.podcast.heading"),
+    description: t("news.podcast.description"),
+    openGraph: {
+      title: t("news.podcast.heading"),
+      description: t("news.podcast.description"),
+      images: [postImage],
+      type: "article",
+      publishedTime: "2024-11-01T00:00:00.000Z",
+      authors: ["Foytech"],
+      siteName: "Foytech Blog",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("news.podcast.heading"),
+      description: t("news.podcast.description"),
+      images: [postImage],
+    },
+    alternates: {
+      canonical: `https://foytech.com/blog/o1-podcast`,
+      languages: {
+        en: "/blog/o1-podcast",
+        sv: "/sv/blog/o1-podcast",
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+  }
+}
+
+export default async function O1PodcastPost({
+  params: { lang },
+}: {
+  params: { lang: string }
+}) {
+  const { resources } = await initTranslations(lang, i18nNamespaces)
 
   return (
-    <article className="article">
-      <Link
-        href="/blog"
-        className="inline-flex items-center text-primary font-semibold hover:underline mb-8"
-      >
-        <ArrowLeftIcon className="w-4 h-4 mr-2" />
-        {t("back")}
-      </Link>
-
-      <h1 className="text-4xl font-semibold mb-4">
-        {t("news.podcast.heading")}
-      </h1>
-
-      <Image
-        src="/images/o1-blog-post.webp"
-        alt="OpenAI o1 Podcast"
-        className="w-full rounded-xl mb-4"
-        width={1600}
-        height={800}
-      />
-
-      <div className="space-y-6 body-text">
-        <p className="text">{t("news.podcast.description")}</p>
-
-        <p className="text">{t("news.podcast.listen")}</p>
-
-        <div>
-          <audio controls>
-            <source src="/audio/OpenAI_o1.wav" type="audio/wav" />
-            <track kind="captions" srcLang="en" />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      </div>
-
-      <div className="mt-16">
-        <h3 className="text-2xl font-semibold mb-4">{t("news.moreNews")}</h3>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          <Link href="/blog/aramco-groq">
-            <Image
-              src="/images/aramco-groq-blog-post.webp"
-              alt="Aramco Digital and Groq Partnership"
-              width={400}
-              height={200}
-              className="rounded-xl mb-4 object-cover w-full"
-            />
-            <h4 className="text-xl font-semibold mb-2">
-              {t("news.aramcoGroq.heading")}
-            </h4>
-            <p className="text-muted-foreground mb-2">
-              {t("news.aramcoGroq.description")}
-            </p>
-          </Link>
-
-          <Link href="/blog/foytech-qura">
-            <Image
-              src="/images/foytech-qura.webp"
-              alt="Foytech and Qura"
-              width={400}
-              height={200}
-              className="rounded-xl mb-4 object-cover w-full"
-            />
-            <h4 className="text-xl font-semibold mb-2">
-              {t("news.qura.heading")}
-            </h4>
-            <p className="text-muted-foreground mb-2">
-              {t("news.qura.description")}
-            </p>
-          </Link>
-        </div>
-      </div>
-    </article>
+    <TranslationsProvider
+      namespaces={i18nNamespaces}
+      locale={lang}
+      resources={resources}
+    >
+      <O1PodcastContent />
+    </TranslationsProvider>
   )
 }

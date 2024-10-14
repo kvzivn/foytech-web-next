@@ -1,4 +1,11 @@
 {
+  "metaTitle": "Foytech",
+  "metaDescription": "Foytech tillhandahåller skräddarsydda AI-lösningar för advokatfirmor och andra aktörer inom juristbranschen.",
+  "ogTitle": "Foytech - AI-drivna verktyg för juristbranschen",
+  "ogDescription": "Utforska Foytechs AI-plattform utformad för att öka produktivitet och effektivitet i juridiskt arbete.",
+  "ogImageAlt": "Foytech AI juridiska lösningar",
+  "twitterTitle": "Foytech - AI-innovation för jurister",
+  "twitterDescription": "Utforska Foytechs AI-plattform utformad för att öka produktivitet och effektivitet i juridiskt arbete.",
   "navBarItems": {
     "news": "Nyheter",
     "contact": "Kontakt"
@@ -10,8 +17,10 @@
     "text": "Foytech tillhandahåller skräddarsydda AI-lösningar för advokatfirmor och andra aktörer inom juristbranschen."
   },
   "foytech": {
-    "heading": "Foytechs uppdrag",
-    "text": "Under ledning av advokat Richard Sahlberg har Foytech vuxit från ett internt projekt på Foyen Advokatfirma till en toppmodern AI-plattform som används av advokatfirmor i Sverige och även utomlands. Plattformen grundades för att effektivisera framtagande av arbetsprodukter i advokatbranschen och förfinas kontinuerligt av yrkesverksamma inom området. Detta säkerställer att plattformen uppfyller de högsta standarderna för tillämpning av generativ AI inom svensk rätt."
+    "heading": "Vi utvecklar framtidens juridiska hjälpmedel för advokatbyråer i framkant.",
+    "text1": "Under ledning av advokat Richard Sahlberg har Foytech vuxit från ett internt projekt på Foyen Advokatfirma till en toppmodern AI-plattform som används av advokatfirmor i Sverige och även utomlands.",
+    "text2": "Plattformen grundades för att effektivisera framtagande av arbetsprodukter i advokatbranschen och förfinas kontinuerligt av yrkesverksamma inom området.",
+    "text3": "Detta säkerställer att plattformen uppfyller de högsta standarderna för tillämpning av generativ AI inom svensk rätt."
   },
   "rumpole": {
     "heading": "Introducerar",
@@ -19,9 +28,10 @@
     "text2": "Rumpole kan skräddarsys efter Ditt företags specifika behov, inklusive anpassad branding och domännamn. För en närmare titt på våra lösningar kan Du begära tillgång till gratisversionen och då också få en introduktion till plattformen och vad som finns i den professionella versionen."
   },
   "team": {
-    "heading": "Teamet bakom Foytech",
-    "text1": "Medgrundaren Richard Sahlberg har arbetat på Foyen Advokatfirma sedan 2010 och är specialiserad på entreprenadrätt och tvistemål. Dessförinnan var han verksam inom IT-branschen med olika former av IT-utveckling. Han är involverad hands-on i alla delar av Foytech, från produktdesign och programmering till precisionstester av Rumpole och serverinstallationer. Richard har stöd av AI-specialiserade programmerare och en ledningsgrupp som kombinerar djup kompetens inom svensk rätt med teknisk förståelse för de allra senaste AI-möjligheterna.",
-    "text2": "I styrelsen ingår också advokaterna Andreas Lindström, Henrik Ståhlberg, Jonas Conradsson och Madeleine Jönsson. Tillsammans ser de till att Foytech fortsätter att ligga i framkant inom rättsteknologi och kontinuerligt utvecklas för att möta de snabbt förändrade behoven hos moderna advokatbyråer."
+    "heading": "Advokaterna bakom Foytech",
+    "text1": "Medgrundaren Richard Sahlberg har arbetat på Foyen Advokatfirma sedan 2010 och är specialiserad på entreprenadrätt och tvistemål. Dessförinnan var han verksam inom IT-branschen med olika former av IT-utveckling.",
+    "text2": "Han är involverad hands-on i alla delar av Foytech, från produktdesign och programmering till precisionstester av Rumpole och serverinstallationer. Richard har stöd av AI-specialiserade programmerare och en ledningsgrupp som kombinerar djup kompetens inom svensk rätt med teknisk förståelse för de allra senaste AI-möjligheterna.",
+    "text3": "I styrelsen ingår också advokaterna Andreas Lindström, Henrik Ståhlberg, Jonas Conradsson och Madeleine Jönsson. Tillsammans ser de till att Foytech fortsätter att ligga i framkant inom rättsteknologi och kontinuerligt utvecklas för att möta de snabbt förändrade behoven hos moderna advokatbyråer."
   },
   "faq": {
     "heading": "Frågor och svar",
@@ -59,10 +69,14 @@
     "body": "Vi har en plattform som kan användas med färdiga uppsättningar rättsdata, klientens egen data, hostat på Foytechs servrar eller hostat på kundens egna interna servrar, med användande av interna eller externa AI-motorer och med eller utan anpassningar av grafisk profil och domännamn utifrån kundens önskemål/behov. Foytech ordnar med demonstration av möjliga professionella lösningar på förfrågan."
   },
   "contact": {
-    "heading": "Har du frågor? Vi kan hjälpa dig!",
+    "heading": "Har du frågor?",
     "text": "Kontakta oss gärna och vi kommer göra vårt bästa för att hjälpa dig.",
-    "general": "Allmänt",
-    "support": "Support"
+    "generalQuestions": "Allmänna frågor",
+    "generalQuestionsDescription": "Vi besvarar gärna frågor om våra tjänster, priser och hur vår AI-plattform kan stärka din advokatbyrå.",
+    "emailUs": "Maila oss",
+    "contactSupport": "Kontakta support",
+    "supportDescription": "Har du tekniska frågor eller behöver hjälp med plattformen? Kontakta vårt support team här.",
+    "emailSupport": "Maila support"
   },
   "footer": {
     "copyRight": "",
@@ -138,10 +152,11 @@
     ]
   },
   "news": {
-    "heading": "Foytech Nyheter",
+    "heading": "Nyheter",
     "subheading": "Håll dig uppdaterad med våra senaste AI-nyheter",
     "moreNews": "Fler nyheter",
     "aramcoGroq": {
+      "category": "Infrastruktur",
       "heading": "Aramco Digital och Groq samarbetar om megadatacenter i Saudiarabien",
       "description": "I ett revolutionerande drag som förväntas förändra den globala AI-scenen, har Aramco Digital, dotterbolag till energijätten Aramco, och AI-innovatören Groq inlett ett partnerskap för att bygga världens största AI-inferensdatacenter i Saudiarabien.",
       "videoCaption": "AI-genererad video baserad på offentliga källor. Ingen manuell redigering har gjorts.",
@@ -154,6 +169,7 @@
       ]
     },
     "qura": {
+      "category": "Juridikbranschen",
       "heading": "Foyens AI-framgångshistoria med Qura och Foytech - nu tillgänglig för alla",
       "description": "Efter att ha testat flera AI-produkter beslutade Foyen att endast gå vidare med Qura och Foytech, en lösning de har implementerat över hela byrån med nästan 100 jurister.",
       "items": [
@@ -176,7 +192,8 @@
       "conclusion": "Mer information om detta partnerskap kommer att kommuniceras till Quras och Foytechs kunder."
     },
     "podcast": {
-      "heading": "OpenAI o1 Podcast",
+      "category": "Podcast",
+      "heading": "OpenAI's o1-modell: den nya eran av AI-resonemang",
       "description": "Foytech har publicerat sin första AI-genererade podcast. Baserat på teknikinnovationer från förra veckan, är både manus och ljud helt AI-genererade baserat på offentliga källor, utan manuell redigering.",
       "listen": "Lyssna på podcasten här:"
     }

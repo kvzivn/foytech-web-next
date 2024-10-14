@@ -15,8 +15,6 @@ const Team = () => {
     margin: "0px 0px -400px 0px",
   })
 
-  const headingText = "Advokaterna bakom Foytech"
-
   const members = [
     {
       name: "Richard Sahlberg",
@@ -49,7 +47,7 @@ const Team = () => {
     <section ref={sectionRef} className="section">
       <div className="container flex flex-col md:gap-32">
         <HeadingAnimated
-          heading={headingText}
+          heading={t("team.heading")}
           isInView={isInView}
           className="max-w-[16rem] md:max-w-sm md:ml-auto md:text-right"
         />
@@ -168,18 +166,34 @@ const Member = ({
   member: { name: string; image: string; link: string }
   isInView: boolean
 }) => {
-  return (
-    <motion.div
-      className="group w-full p-2 rounded-t-xl rounded-b-md bg-primary-100 dark:bg-primary-950 hover:bg-primary-200 dark:hover:bg-primary-900 transition-colors duration-300"
-      initial={{ opacity: 0, y: index * 20 + 40 }}
-      animate={isInView && { opacity: 1, y: index * 20 }}
-      whileHover={{ scale: 1.01 }}
-      transition={{
+  const variants = {
+    hidden: { opacity: 0, y: index * 20 + 40 },
+    visible: {
+      opacity: 1,
+      y: index * 20,
+      transition: {
         type: "spring",
         duration: 1.35,
         delay: index * 0.155,
         bounce: 0,
-      }}
+      },
+    },
+    hover: {
+      scale: 1.01,
+      transition: {
+        type: "spring",
+        duration: 0.35,
+      },
+    },
+  }
+
+  return (
+    <motion.div
+      className="group w-full p-2 rounded-t-xl rounded-b-md bg-primary-100 dark:bg-primary-950 hover:bg-primary-200 dark:hover:bg-primary-900 transition-colors duration-300"
+      variants={variants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      whileHover="hover"
     >
       <Link href={member.link} target="_blank">
         <Image

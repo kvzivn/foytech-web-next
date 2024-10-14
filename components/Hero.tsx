@@ -110,13 +110,13 @@ const Hero = () => {
           }}
           className="grid items-start justify-end"
         >
-          <div className="outline outline-border -outline-offset-1 rounded-lg">
+          <div className="border-8 border-primary/80 rounded-md">
             <video
               autoPlay
               loop
               muted
               playsInline
-              className="w-full xl:max-w-[32rem] rounded-lg"
+              className="w-full xl:max-w-[32rem] "
               controls
               poster="/images/rumpole_landing_page.png"
             >

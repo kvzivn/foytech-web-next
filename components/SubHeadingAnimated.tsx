@@ -1,13 +1,15 @@
+"use client"
+
 import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 
 const SubHeadingAnimated = ({
   subHeading,
-  isInView,
+  isInView = true,
   className,
 }: {
   subHeading: string
-  isInView: boolean
+  isInView?: boolean
   className?: string
 }) => {
   return (

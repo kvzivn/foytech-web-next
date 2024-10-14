@@ -23,7 +23,7 @@ export default async function Home({
       locale={lang}
       resources={resources}
     >
-      <div className="overflow-hidden">
+      <main className="overflow-hidden">
         <Hero />
         <About />
         <Rumpole />
@@ -31,7 +31,7 @@ export default async function Home({
         <FAQ />
         <BlogSection />
         <ContactForm />
-      </div>
+      </main>
     </TranslationsProvider>
   )
 }

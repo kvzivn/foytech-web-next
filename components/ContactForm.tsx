@@ -80,7 +80,7 @@ const ContactForm = () => {
 
   return (
     <section ref={sectionRef} className="section" id="contact">
-      <div className="pb-12 lg:pb-0 bg-primary-100 dark:bg-primary-950/50 transition-opacity duration-700">
+      <div className="pb-12 lg:pb-0 bg-primary-100 dark:bg-primary-980/80 transition-opacity duration-700">
         <div className="container flex flex-col lg:flex-row items-center justify-between gap-0 xl:gap-24">
           <div className="w-full lg:w-1/2 py-10 lg:py-20 lg:pr-20 xl:pr-0 space-y-3">
             <HeadingAnimated
@@ -107,7 +107,7 @@ const ContactForm = () => {
           >
             <div
               className={cn(
-                "lg:absolute right-4 xl:right-0 lg:w-[33rem] lg:-translate-y-1/2 bg-[#fff] dark:bg-[#12212b] border p-8 sm:p-20 lg:py-[4.5rem] lg:px-0 rounded-xl",
+                "lg:absolute right-4 xl:right-0 lg:w-[33rem] lg:-translate-y-1/2 bg-[#fff] dark:bg-primary-970 border p-8 sm:p-20 lg:py-[4.5rem] lg:px-0 rounded-xl",
                 submitted || error ? "lg:pt-20 lg:pb-10" : ""
               )}
             >

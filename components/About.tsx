@@ -21,7 +21,7 @@ const About = () => {
       <div className="container relative grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <div ref={headingContainerRef} className="max-w-lg">
           <HeadingAnimated
-            heading={headingText}
+            heading={t("foytech.heading")}
             isInView={isHeadingInView}
             className="md:text-[2.5rem] md:leading-[3.15rem] "
           />

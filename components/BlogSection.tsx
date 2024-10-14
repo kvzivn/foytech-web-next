@@ -19,7 +19,8 @@ type BlogPost = {
 }
 
 const BlogSection = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const currentLocale = i18n.language
   const blogSectionRef = useRef(null)
   const buttonRef = useRef(null)
   const isInView = useInView(blogSectionRef, {
@@ -37,9 +38,10 @@ const BlogSection = () => {
       id: 1,
       title: t("news.aramcoGroq.heading"),
       description: t("news.aramcoGroq.description"),
-      category: "Infrastruktur",
+      category: t("news.aramcoGroq.category"),
       imageUrl: "/images/aramco-groq-blog-post.webp",
-      link: "/blog/aramco-groq",
+      link:
+        currentLocale === "sv" ? "/sv/blog/aramco-groq" : "/blog/aramco-groq",
       date: "Sep 21, 2024",
       featured: true,
     },
@@ -47,9 +49,9 @@ const BlogSection = () => {
       id: 2,
       title: t("news.podcast.heading"),
       description: t("news.podcast.description"),
-      category: "Podcast",
+      category: t("news.podcast.category"),
       imageUrl: "/images/o1-blog-post.webp",
-      link: "/blog/o1-podcast",
+      link: currentLocale === "sv" ? "/sv/blog/o1-podcast" : "/blog/o1-podcast",
       date: "Sep 17, 2024",
       featured: false,
     },
@@ -57,16 +59,17 @@ const BlogSection = () => {
       id: 3,
       title: t("news.qura.heading"),
       description: t("news.qura.description"),
-      category: "Nyheter",
+      category: t("news.qura.category"),
       imageUrl: "/images/foytech-qura.webp",
-      link: "/blog/foytech-qura",
+      link:
+        currentLocale === "sv" ? "/sv/blog/foytech-qura" : "/blog/foytech-qura",
       date: "Sep 1, 2024",
       featured: false,
     },
   ]
 
   return (
-    <section className="section md:py-16">
+    <section className="section">
       <div ref={blogSectionRef} className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -78,7 +81,7 @@ const BlogSection = () => {
           }}
           className="h2"
         >
-          Nyheter
+          {t("news.heading")}
         </motion.h2>
         <div className="space-y-8 md:space-y-16 divide-y divide-primary-200/80 dark:divide-primary-900/60">
           {blogPostLinks.map((post) => (
@@ -99,7 +102,7 @@ const BlogSection = () => {
         >
           <Button size="lg" asChild className="text-lg">
             <Link href="/blog" className="inline-flex items-center text-black">
-              Fler nyheter
+              {t("news.moreNews")}
               <ArrowRightIcon className="w-6 h-6 ml-2" />
             </Link>
           </Button>

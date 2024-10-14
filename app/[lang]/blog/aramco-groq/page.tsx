@@ -1,84 +1,72 @@
-"use client"
+import initTranslations from "@/app/i18n"
+import TranslationsProvider from "@/components/TranslationsProvider"
+import AramcoGroqContent from "./content"
+import { Metadata } from "next"
 
-import { useTranslation } from "react-i18next"
-import { ArrowLeftIcon } from "lucide-react"
-import Link from "next/link"
-import VideoPlayer from "@/components/VideoPlayer"
-import Image from "next/image"
+const i18nNamespaces = ["home"]
 
-export default function AramcoGroqPost() {
-  const { t } = useTranslation()
-  const paragraphs = t("news.aramcoGroq.paragraphs", {
-    returnObjects: true,
-  }) as string[]
+type Props = {
+  params: { lang: string }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { t } = await initTranslations(params.lang, i18nNamespaces)
+
+  const postImage = "/images/aramco-groq-blog-post.webp"
+
+  return {
+    title: t("news.aramcoGroq.heading"),
+    description: t("news.aramcoGroq.description"),
+    openGraph: {
+      title: t("news.aramcoGroq.heading"),
+      description: t("news.aramcoGroq.description"),
+      images: [postImage],
+      type: "article",
+      publishedTime: "2024-09-21T00:00:00.000Z",
+      authors: ["Foytech"],
+      siteName: "Foytech Blog",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("news.aramcoGroq.heading"),
+      description: t("news.aramcoGroq.description"),
+      images: [postImage],
+    },
+    alternates: {
+      canonical: `https://foytech.com/blog/aramco-groq`,
+      languages: {
+        en: "/blog/aramco-groq",
+        sv: "/sv/blog/aramco-groq",
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+  }
+}
+
+export default async function AramcoGroqPost({
+  params: { lang },
+}: {
+  params: { lang: string }
+}) {
+  const { resources } = await initTranslations(lang, i18nNamespaces)
 
   return (
-    <article className="article">
-      <Link
-        href="/blog"
-        className="inline-flex items-center text-primary font-semibold hover:underline mb-8"
-      >
-        <ArrowLeftIcon className="w-4 h-4 mr-2" />
-        {t("back")}
-      </Link>
-
-      <h1 className="text-4xl font-semibold mb-4">
-        {t("news.aramcoGroq.heading")}
-      </h1>
-
-      <VideoPlayer
-        videoId="aramco-groq-video"
-        videoSrc="/videos/aramco-groq-videocast.mp4"
-        posterSrc="/images/aramco-groq-video-thumbnail.webp"
-      />
-
-      <p className="mt-2 mb-8 text-sm text-black italic">
-        {t("news.aramcoGroq.videoCaption")}
-      </p>
-
-      <div className="space-y-6 body-text">
-        {paragraphs.map((paragraph: string, index: number) => (
-          <p key={index} className="text">
-            {paragraph}
-          </p>
-        ))}
-      </div>
-
-      <div className="mt-16">
-        <h3 className="text-2xl font-semibold mb-4">{t("news.moreNews")}</h3>
-        <div className="grid md:grid-cols-2 gap-8">
-          <Link href="/blog/o1-podcast">
-            <Image
-              src="/images/o1-blog-post.webp"
-              alt="OpenAI o1 Podcast"
-              width={400}
-              height={200}
-              className="rounded-xl mb-4 object-cover w-full"
-            />
-            <h4 className="text-xl font-semibold mb-2">
-              {t("news.podcast.heading")}
-            </h4>
-            <p className="text-muted-foreground mb-2">
-              {t("news.podcast.description")}
-            </p>
-          </Link>
-          <Link href="/blog/foytech-qura">
-            <Image
-              src="/images/foytech-qura.webp"
-              alt="Foytech and Qura"
-              width={400}
-              height={200}
-              className="rounded-xl mb-4 object-cover w-full"
-            />
-            <h4 className="text-xl font-semibold mb-2">
-              {t("news.qura.heading")}
-            </h4>
-            <p className="text-muted-foreground mb-2">
-              {t("news.qura.description")}
-            </p>
-          </Link>
-        </div>
-      </div>
-    </article>
+    <TranslationsProvider
+      namespaces={i18nNamespaces}
+      locale={lang}
+      resources={resources}
+    >
+      <AramcoGroqContent />
+    </TranslationsProvider>
   )
 }

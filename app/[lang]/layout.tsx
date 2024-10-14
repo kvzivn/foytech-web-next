@@ -8,6 +8,7 @@ import Footer from "@/components/Footer"
 import i18nConfig from "@/i18n-config"
 import { notFound } from "next/navigation"
 import "./globals.css"
+import initTranslations from "../i18n"
 
 const fontSans = localFont({
   src: [
@@ -48,9 +49,35 @@ export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }))
 }
 
-export const metadata: Metadata = {
-  title: "i18n within app directory - Vercel Examples",
-  description: "How to do i18n in Next.js 13 within app directory",
+export async function generateMetadata({
+  params: { lang },
+}: {
+  params: { lang: string }
+}): Promise<Metadata> {
+  const { t } = await initTranslations(lang, ["home"])
+
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    openGraph: {
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      images: [
+        {
+          url: "/images/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: t("ogImageAlt"),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("twitterTitle"),
+      description: t("twitterDescription"),
+      images: ["/images/og-image.jpg"],
+    },
+  }
 }
 
 export default function RootLayout({
@@ -61,7 +88,7 @@ export default function RootLayout({
   params: { lang: string }
 }>) {
   if (!i18nConfig.locales.includes(params.lang)) {
-    return <p>locale Not found</p>
+    return notFound()
   }
 
   return (
@@ -76,9 +103,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Lenis />
-          <Header />
+          <Header lang={params.lang} />
           {children}
-          <Footer />
+          <Footer lang={params.lang} />
           <ScreenSizeIndicator />
         </ThemeProvider>
       </body>
