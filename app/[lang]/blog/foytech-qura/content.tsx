@@ -61,7 +61,7 @@ export default function FoytechQuraContent() {
             <h4 className="text-xl font-semibold mb-2">
               {t("news.aramcoGroq.heading")}
             </h4>
-            <p className="text-muted foreground">
+            <p className="text-muted-foreground">
               {t("news.aramcoGroq.description")}
             </p>
           </Link>
@@ -76,7 +76,7 @@ export default function FoytechQuraContent() {
             <h4 className="text-xl font-semibold mb-2">
               {t("news.podcast.heading")}
             </h4>
-            <p className="text-muted foreground">
+            <p className="text-muted-foreground">
               {t("news.podcast.description")}
             </p>
           </Link>
